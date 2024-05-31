@@ -1,0 +1,11 @@
+VehicleID,MakeModel,BatteryCapacity,ConsumptionRate,MinChargeThreshold
+EV1,Tesla Model 3,75,15,20
+EV2,Nissan Leaf,40,20,15
+EV3,Chevrolet Bolt,65,18,25
+EV4,Hyundai Kona Electric,64,17,20
+EV5,Audi e-Tron,95,22,30
+EV6,Jaguar I-PACE,90,25,25
+EV7,BMW i3,42,19,18
+EV8,Renault Zoe,52,21,22
+EV9,Volvo XC40 Recharge,78,24,28
+EV10,Porsche Taycan,83,23,26

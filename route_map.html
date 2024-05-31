@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b216330350e6c0e18efc556d1b59cecb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b216330350e6c0e18efc556d1b59cecb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b216330350e6c0e18efc556d1b59cecb = L.map(
+                "map_b216330350e6c0e18efc556d1b59cecb",
+                {
+                    center: [19.076, 72.8777],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7cdca95b6f29623c0b0f67b3ad236122 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7cdca95b6f29623c0b0f67b3ad236122.addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var poly_line_706f6a25627f0858d053d3ae2b900667 = L.polyline(
+                [[19.076, 72.8777], [18.5204, 73.8567], [18.5204, 73.8567], [19.076, 72.8777], [19.2183, 72.9781], [19.8762, 75.3433], [18.4077, 76.5604], [17.6859, 73.9933], [17.6859, 73.9933], [18.4077, 76.5604], [19.8762, 75.3433], [19.2183, 72.9781], [16.705, 74.2433], [19.1383, 77.3208], [20.7096, 77.0106], [20.7096, 77.0106], [19.1383, 77.3208], [16.705, 74.2433], [19.2183, 72.9781], [19.076, 72.8777]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var marker_dd0ffa9ff32e5b5b0dcf34b3472e7695 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_6ff7dff3f060a6a2fdc9c700f2ffd4cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dd0ffa9ff32e5b5b0dcf34b3472e7695.setIcon(icon_6ff7dff3f060a6a2fdc9c700f2ffd4cc);
+        
+    
+        var popup_a7e551891499137b1cb5b247524d6559 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7146c81dbc57386abdfac3b22676ffb0 = $(`<div id="html_7146c81dbc57386abdfac3b22676ffb0" style="width: 100.0%; height: 100.0%;">Charging Station CS101</div>`)[0];
+                popup_a7e551891499137b1cb5b247524d6559.setContent(html_7146c81dbc57386abdfac3b22676ffb0);
+            
+        
+
+        marker_dd0ffa9ff32e5b5b0dcf34b3472e7695.bindPopup(popup_a7e551891499137b1cb5b247524d6559)
+        ;
+
+        
+    
+    
+            var marker_51f69ca4b0ad1cdbfcd607ef3cd417ec = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_4470da55b2635ef3a080a3ed24f0dc70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_51f69ca4b0ad1cdbfcd607ef3cd417ec.setIcon(icon_4470da55b2635ef3a080a3ed24f0dc70);
+        
+    
+        var popup_04c148357ec03c57ea445b3cfa5bb004 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18efe0f68d7e5323a3ad7ace3f6bbaab = $(`<div id="html_18efe0f68d7e5323a3ad7ace3f6bbaab" style="width: 100.0%; height: 100.0%;">Charging Station CS102</div>`)[0];
+                popup_04c148357ec03c57ea445b3cfa5bb004.setContent(html_18efe0f68d7e5323a3ad7ace3f6bbaab);
+            
+        
+
+        marker_51f69ca4b0ad1cdbfcd607ef3cd417ec.bindPopup(popup_04c148357ec03c57ea445b3cfa5bb004)
+        ;
+
+        
+    
+    
+            var marker_81d7234504ef9b9b960c653a7afbebb9 = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_2c81e39e56d2ca6653e24b1ccdfa0958 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_81d7234504ef9b9b960c653a7afbebb9.setIcon(icon_2c81e39e56d2ca6653e24b1ccdfa0958);
+        
+    
+        var popup_7ffa416b2614008ba1f5438bad5c100e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_482e975f3e66894a5756a8cc966bcb6c = $(`<div id="html_482e975f3e66894a5756a8cc966bcb6c" style="width: 100.0%; height: 100.0%;">Charging Station CS103</div>`)[0];
+                popup_7ffa416b2614008ba1f5438bad5c100e.setContent(html_482e975f3e66894a5756a8cc966bcb6c);
+            
+        
+
+        marker_81d7234504ef9b9b960c653a7afbebb9.bindPopup(popup_7ffa416b2614008ba1f5438bad5c100e)
+        ;
+
+        
+    
+    
+            var marker_82b27c712e3696aede1e7a7ac8d9f826 = L.marker(
+                [19.2183, 72.9781],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_b8bdf81da7c309bf2cce3ddb025f4e18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_82b27c712e3696aede1e7a7ac8d9f826.setIcon(icon_b8bdf81da7c309bf2cce3ddb025f4e18);
+        
+    
+        var popup_273a8ffd2055823a19a950494f44d7be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2de9c9ed731e8bca0d363b81f5ffacfd = $(`<div id="html_2de9c9ed731e8bca0d363b81f5ffacfd" style="width: 100.0%; height: 100.0%;">Charging Station CS104</div>`)[0];
+                popup_273a8ffd2055823a19a950494f44d7be.setContent(html_2de9c9ed731e8bca0d363b81f5ffacfd);
+            
+        
+
+        marker_82b27c712e3696aede1e7a7ac8d9f826.bindPopup(popup_273a8ffd2055823a19a950494f44d7be)
+        ;
+
+        
+    
+    
+            var marker_e5564c68a6aa1e9e8665f4c884726478 = L.marker(
+                [20.0119, 73.79],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_9ff3613b24c2614333126f7400069888 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e5564c68a6aa1e9e8665f4c884726478.setIcon(icon_9ff3613b24c2614333126f7400069888);
+        
+    
+        var popup_f2bfeb40bcaae4bfe2be1db35de332c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43b332191432d4734d4d127e910e58b4 = $(`<div id="html_43b332191432d4734d4d127e910e58b4" style="width: 100.0%; height: 100.0%;">Charging Station CS105</div>`)[0];
+                popup_f2bfeb40bcaae4bfe2be1db35de332c6.setContent(html_43b332191432d4734d4d127e910e58b4);
+            
+        
+
+        marker_e5564c68a6aa1e9e8665f4c884726478.bindPopup(popup_f2bfeb40bcaae4bfe2be1db35de332c6)
+        ;
+
+        
+    
+    
+            var marker_5343aa6848291eef55f3ef25e8cc570c = L.marker(
+                [16.705, 74.2433],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_0c3717339cefbb9af12fb4660da12e5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5343aa6848291eef55f3ef25e8cc570c.setIcon(icon_0c3717339cefbb9af12fb4660da12e5e);
+        
+    
+        var popup_6f38a81151ecae1e7a1cb9bcfa218ee1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e366eb911a7a6dec9dd8cb31c7a1f746 = $(`<div id="html_e366eb911a7a6dec9dd8cb31c7a1f746" style="width: 100.0%; height: 100.0%;">Charging Station CS106</div>`)[0];
+                popup_6f38a81151ecae1e7a1cb9bcfa218ee1.setContent(html_e366eb911a7a6dec9dd8cb31c7a1f746);
+            
+        
+
+        marker_5343aa6848291eef55f3ef25e8cc570c.bindPopup(popup_6f38a81151ecae1e7a1cb9bcfa218ee1)
+        ;
+
+        
+    
+    
+            var marker_7630ff237f224bcb40c7c51852499b11 = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_7134ac4a9842f09cee5e8ba43ed2a3d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7630ff237f224bcb40c7c51852499b11.setIcon(icon_7134ac4a9842f09cee5e8ba43ed2a3d1);
+        
+    
+        var popup_44b3eec8701cd0ed6294d3cef64e4946 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8eeb8749907bdadeaa741411d53115da = $(`<div id="html_8eeb8749907bdadeaa741411d53115da" style="width: 100.0%; height: 100.0%;">Charging Station CS107</div>`)[0];
+                popup_44b3eec8701cd0ed6294d3cef64e4946.setContent(html_8eeb8749907bdadeaa741411d53115da);
+            
+        
+
+        marker_7630ff237f224bcb40c7c51852499b11.bindPopup(popup_44b3eec8701cd0ed6294d3cef64e4946)
+        ;
+
+        
+    
+    
+            var marker_654141a8b53ac0564e2d875fdde596c6 = L.marker(
+                [17.6599, 75.9064],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_1e14c5df08e310840a0ebded15c66c61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_654141a8b53ac0564e2d875fdde596c6.setIcon(icon_1e14c5df08e310840a0ebded15c66c61);
+        
+    
+        var popup_6a6a18b0e8f127ba1a837e11305007ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83dc8adb355e850b28045c7dc011813f = $(`<div id="html_83dc8adb355e850b28045c7dc011813f" style="width: 100.0%; height: 100.0%;">Charging Station CS108</div>`)[0];
+                popup_6a6a18b0e8f127ba1a837e11305007ce.setContent(html_83dc8adb355e850b28045c7dc011813f);
+            
+        
+
+        marker_654141a8b53ac0564e2d875fdde596c6.bindPopup(popup_6a6a18b0e8f127ba1a837e11305007ce)
+        ;
+
+        
+    
+    
+            var marker_a4ff1b935019e48be913fa465db73b5d = L.marker(
+                [20.9374, 77.7796],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_9c7d52589f29025054ef5ac858c0642a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a4ff1b935019e48be913fa465db73b5d.setIcon(icon_9c7d52589f29025054ef5ac858c0642a);
+        
+    
+        var popup_f85be0ef3dc5c54e452451135f73b9aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4ddd07c194ff69a1ffc8d9f49db4033 = $(`<div id="html_f4ddd07c194ff69a1ffc8d9f49db4033" style="width: 100.0%; height: 100.0%;">Charging Station CS109</div>`)[0];
+                popup_f85be0ef3dc5c54e452451135f73b9aa.setContent(html_f4ddd07c194ff69a1ffc8d9f49db4033);
+            
+        
+
+        marker_a4ff1b935019e48be913fa465db73b5d.bindPopup(popup_f85be0ef3dc5c54e452451135f73b9aa)
+        ;
+
+        
+    
+    
+            var marker_226d7c7710856f9fdfd2495c34b37b78 = L.marker(
+                [19.1383, 77.3208],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_1e8d99340d86a3e69837e0bcc33973b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_226d7c7710856f9fdfd2495c34b37b78.setIcon(icon_1e8d99340d86a3e69837e0bcc33973b4);
+        
+    
+        var popup_f13567d5a9167e514e646127d1e1ec4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20bd1df6f455091460457a9c189819cf = $(`<div id="html_20bd1df6f455091460457a9c189819cf" style="width: 100.0%; height: 100.0%;">Charging Station CS110</div>`)[0];
+                popup_f13567d5a9167e514e646127d1e1ec4d.setContent(html_20bd1df6f455091460457a9c189819cf);
+            
+        
+
+        marker_226d7c7710856f9fdfd2495c34b37b78.bindPopup(popup_f13567d5a9167e514e646127d1e1ec4d)
+        ;
+
+        
+    
+    
+            var marker_89ff5bff2f7c9ec8a7f79f81d7e053b6 = L.marker(
+                [21.01, 75.58],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_a3992045147b680054556286ee64b937 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_89ff5bff2f7c9ec8a7f79f81d7e053b6.setIcon(icon_a3992045147b680054556286ee64b937);
+        
+    
+        var popup_fa74b420c2076abc4d1233c407cc6e64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a293e0f46f6a17815b67ad21863e4d65 = $(`<div id="html_a293e0f46f6a17815b67ad21863e4d65" style="width: 100.0%; height: 100.0%;">Charging Station CS111</div>`)[0];
+                popup_fa74b420c2076abc4d1233c407cc6e64.setContent(html_a293e0f46f6a17815b67ad21863e4d65);
+            
+        
+
+        marker_89ff5bff2f7c9ec8a7f79f81d7e053b6.bindPopup(popup_fa74b420c2076abc4d1233c407cc6e64)
+        ;
+
+        
+    
+    
+            var marker_38c4ae14389b39d87cfa7a61adb06829 = L.marker(
+                [18.4077, 76.5604],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_14dbfa6aaac1bd8d940f53f88c20be0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_38c4ae14389b39d87cfa7a61adb06829.setIcon(icon_14dbfa6aaac1bd8d940f53f88c20be0c);
+        
+    
+        var popup_aac01b733540edff14872f9b3f3b7b58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c283ab1592f2c65159b8c3336db11ab = $(`<div id="html_3c283ab1592f2c65159b8c3336db11ab" style="width: 100.0%; height: 100.0%;">Charging Station CS112</div>`)[0];
+                popup_aac01b733540edff14872f9b3f3b7b58.setContent(html_3c283ab1592f2c65159b8c3336db11ab);
+            
+        
+
+        marker_38c4ae14389b39d87cfa7a61adb06829.bindPopup(popup_aac01b733540edff14872f9b3f3b7b58)
+        ;
+
+        
+    
+    
+            var marker_7671cdf9394158aad0a55129e1af2fe8 = L.marker(
+                [16.9944, 73.3002],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_11b3f10fd3500e6781337a8b381a0d53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7671cdf9394158aad0a55129e1af2fe8.setIcon(icon_11b3f10fd3500e6781337a8b381a0d53);
+        
+    
+        var popup_fd87324e4b708f03f70c325d522a5e01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f452229da70172147deca3ac1b4d4f1 = $(`<div id="html_6f452229da70172147deca3ac1b4d4f1" style="width: 100.0%; height: 100.0%;">Charging Station CS113</div>`)[0];
+                popup_fd87324e4b708f03f70c325d522a5e01.setContent(html_6f452229da70172147deca3ac1b4d4f1);
+            
+        
+
+        marker_7671cdf9394158aad0a55129e1af2fe8.bindPopup(popup_fd87324e4b708f03f70c325d522a5e01)
+        ;
+
+        
+    
+    
+            var marker_ebdc2470a522dff071674a74bed6336b = L.marker(
+                [19.9595, 79.2961],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_25909188a812eb366c326e882ad087da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ebdc2470a522dff071674a74bed6336b.setIcon(icon_25909188a812eb366c326e882ad087da);
+        
+    
+        var popup_d46c05067b032a1fd86735b7d1ac927f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb11d13de71470c608be090d50a72c79 = $(`<div id="html_eb11d13de71470c608be090d50a72c79" style="width: 100.0%; height: 100.0%;">Charging Station CS114</div>`)[0];
+                popup_d46c05067b032a1fd86735b7d1ac927f.setContent(html_eb11d13de71470c608be090d50a72c79);
+            
+        
+
+        marker_ebdc2470a522dff071674a74bed6336b.bindPopup(popup_d46c05067b032a1fd86735b7d1ac927f)
+        ;
+
+        
+    
+    
+            var marker_dcbe86c4bd87f556ae382a78b9238536 = L.marker(
+                [20.9025, 74.7749],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_10a3387bd284390f6147d4f628027e18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dcbe86c4bd87f556ae382a78b9238536.setIcon(icon_10a3387bd284390f6147d4f628027e18);
+        
+    
+        var popup_1714cfe5af9d12cd95fb98ce32e532ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0469eb991bae5d0c2ce05a7a3f64d033 = $(`<div id="html_0469eb991bae5d0c2ce05a7a3f64d033" style="width: 100.0%; height: 100.0%;">Charging Station CS115</div>`)[0];
+                popup_1714cfe5af9d12cd95fb98ce32e532ba.setContent(html_0469eb991bae5d0c2ce05a7a3f64d033);
+            
+        
+
+        marker_dcbe86c4bd87f556ae382a78b9238536.bindPopup(popup_1714cfe5af9d12cd95fb98ce32e532ba)
+        ;
+
+        
+    
+    
+            var marker_52a22bc5002e465043a4692287149018 = L.marker(
+                [19.8391, 75.8836],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_3933025bd7563b7e954dc827f8064ccb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_52a22bc5002e465043a4692287149018.setIcon(icon_3933025bd7563b7e954dc827f8064ccb);
+        
+    
+        var popup_01c0e09eabb9100e851d6e464a9c8acf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdd002d33ac46458f23ef6d84ea1eae2 = $(`<div id="html_cdd002d33ac46458f23ef6d84ea1eae2" style="width: 100.0%; height: 100.0%;">Charging Station CS116</div>`)[0];
+                popup_01c0e09eabb9100e851d6e464a9c8acf.setContent(html_cdd002d33ac46458f23ef6d84ea1eae2);
+            
+        
+
+        marker_52a22bc5002e465043a4692287149018.bindPopup(popup_01c0e09eabb9100e851d6e464a9c8acf)
+        ;
+
+        
+    
+    
+            var marker_a810a8fa4a5bd52bb11f5ae71ca992f6 = L.marker(
+                [20.7096, 77.0106],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_70d2c26d25003becdbfbfc8069cb971a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a810a8fa4a5bd52bb11f5ae71ca992f6.setIcon(icon_70d2c26d25003becdbfbfc8069cb971a);
+        
+    
+        var popup_ad3589206c6391fcb52990df892fbc17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92fdc628c27a5eba50f1e48778ca42ac = $(`<div id="html_92fdc628c27a5eba50f1e48778ca42ac" style="width: 100.0%; height: 100.0%;">Charging Station CS117</div>`)[0];
+                popup_ad3589206c6391fcb52990df892fbc17.setContent(html_92fdc628c27a5eba50f1e48778ca42ac);
+            
+        
+
+        marker_a810a8fa4a5bd52bb11f5ae71ca992f6.bindPopup(popup_ad3589206c6391fcb52990df892fbc17)
+        ;
+
+        
+    
+    
+            var marker_a45f4c7641ec4419b48927f94892c13e = L.marker(
+                [19.0947, 74.7384],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_9f9c0926463949c17f65f269ba49e933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a45f4c7641ec4419b48927f94892c13e.setIcon(icon_9f9c0926463949c17f65f269ba49e933);
+        
+    
+        var popup_121a6e5524323479057d7ebe2f61f875 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9af03ea929b707a575f21da6a2d94598 = $(`<div id="html_9af03ea929b707a575f21da6a2d94598" style="width: 100.0%; height: 100.0%;">Charging Station CS118</div>`)[0];
+                popup_121a6e5524323479057d7ebe2f61f875.setContent(html_9af03ea929b707a575f21da6a2d94598);
+            
+        
+
+        marker_a45f4c7641ec4419b48927f94892c13e.bindPopup(popup_121a6e5524323479057d7ebe2f61f875)
+        ;
+
+        
+    
+    
+            var marker_1d4e54078720a473ed20245d5887fd63 = L.marker(
+                [19.2686, 76.7708],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_e2ff6ddae9389619a4d0850041038a57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1d4e54078720a473ed20245d5887fd63.setIcon(icon_e2ff6ddae9389619a4d0850041038a57);
+        
+    
+        var popup_1175cab7b85d0d30a734261bc78ec858 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48a064e3fb598d3fc5d87eb9162b00b6 = $(`<div id="html_48a064e3fb598d3fc5d87eb9162b00b6" style="width: 100.0%; height: 100.0%;">Charging Station CS119</div>`)[0];
+                popup_1175cab7b85d0d30a734261bc78ec858.setContent(html_48a064e3fb598d3fc5d87eb9162b00b6);
+            
+        
+
+        marker_1d4e54078720a473ed20245d5887fd63.bindPopup(popup_1175cab7b85d0d30a734261bc78ec858)
+        ;
+
+        
+    
+    
+            var marker_4e7cdb0e0aeaaa7fe17b2b4330ee14ec = L.marker(
+                [20.3888, 78.1204],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_639a7f501b5261e5a423450dddb09415 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4e7cdb0e0aeaaa7fe17b2b4330ee14ec.setIcon(icon_639a7f501b5261e5a423450dddb09415);
+        
+    
+        var popup_8158981cba21df7629e59306feab3444 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5016ddd781588e540ebb013c27b81f75 = $(`<div id="html_5016ddd781588e540ebb013c27b81f75" style="width: 100.0%; height: 100.0%;">Charging Station CS120</div>`)[0];
+                popup_8158981cba21df7629e59306feab3444.setContent(html_5016ddd781588e540ebb013c27b81f75);
+            
+        
+
+        marker_4e7cdb0e0aeaaa7fe17b2b4330ee14ec.bindPopup(popup_8158981cba21df7629e59306feab3444)
+        ;
+
+        
+    
+    
+            var marker_f19b133916f82f58ada21d5927b44d83 = L.marker(
+                [17.6859, 73.9933],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_c82e45ef915dac3596855acc12cf991a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f19b133916f82f58ada21d5927b44d83.setIcon(icon_c82e45ef915dac3596855acc12cf991a);
+        
+    
+        var popup_fdc2eaff6479eedc2eb73dff2ac5ad94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25a1e75fe2876eee688d28c3210b9706 = $(`<div id="html_25a1e75fe2876eee688d28c3210b9706" style="width: 100.0%; height: 100.0%;">Charging Station CS121</div>`)[0];
+                popup_fdc2eaff6479eedc2eb73dff2ac5ad94.setContent(html_25a1e75fe2876eee688d28c3210b9706);
+            
+        
+
+        marker_f19b133916f82f58ada21d5927b44d83.bindPopup(popup_fdc2eaff6479eedc2eb73dff2ac5ad94)
+        ;
+
+        
+    
+    
+            var marker_7b4dfd8b523bb789cf24bbe5c7dc77f5 = L.marker(
+                [18.9905, 75.7532],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_2439442d8c92ad7c1ec85f6cad1b1183 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7b4dfd8b523bb789cf24bbe5c7dc77f5.setIcon(icon_2439442d8c92ad7c1ec85f6cad1b1183);
+        
+    
+        var popup_a85203f74fda3940ed9fafd32bad55a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_288a8d5e08b3e1731e55cd2cea1c2621 = $(`<div id="html_288a8d5e08b3e1731e55cd2cea1c2621" style="width: 100.0%; height: 100.0%;">Charging Station CS122</div>`)[0];
+                popup_a85203f74fda3940ed9fafd32bad55a8.setContent(html_288a8d5e08b3e1731e55cd2cea1c2621);
+            
+        
+
+        marker_7b4dfd8b523bb789cf24bbe5c7dc77f5.bindPopup(popup_a85203f74fda3940ed9fafd32bad55a8)
+        ;
+
+        
+    
+    
+            var marker_2da4504ddab7d0e11e5685d918a35c86 = L.marker(
+                [20.7476, 78.6022],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_dfe148d259bc75ccf05200bed9807fc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2da4504ddab7d0e11e5685d918a35c86.setIcon(icon_dfe148d259bc75ccf05200bed9807fc9);
+        
+    
+        var popup_a5027cefa399ab3cd542b972c023afe6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80d0cde37b8599561ef3a6598590be2c = $(`<div id="html_80d0cde37b8599561ef3a6598590be2c" style="width: 100.0%; height: 100.0%;">Charging Station CS123</div>`)[0];
+                popup_a5027cefa399ab3cd542b972c023afe6.setContent(html_80d0cde37b8599561ef3a6598590be2c);
+            
+        
+
+        marker_2da4504ddab7d0e11e5685d918a35c86.bindPopup(popup_a5027cefa399ab3cd542b972c023afe6)
+        ;
+
+        
+    
+    
+            var marker_ba901b6f9b90d8d185f6e604c01a6bc7 = L.marker(
+                [20.5431, 76.1802],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_8d510cd2314add90c3a8a5d775c6aad2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ba901b6f9b90d8d185f6e604c01a6bc7.setIcon(icon_8d510cd2314add90c3a8a5d775c6aad2);
+        
+    
+        var popup_87d0db1f46a6ad9ecad983034189c534 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8277852fb39a3a25522b1014f8da8be1 = $(`<div id="html_8277852fb39a3a25522b1014f8da8be1" style="width: 100.0%; height: 100.0%;">Charging Station CS124</div>`)[0];
+                popup_87d0db1f46a6ad9ecad983034189c534.setContent(html_8277852fb39a3a25522b1014f8da8be1);
+            
+        
+
+        marker_ba901b6f9b90d8d185f6e604c01a6bc7.bindPopup(popup_87d0db1f46a6ad9ecad983034189c534)
+        ;
+
+        
+    
+    
+            var marker_ce9abf694c6a7c03cbb2b1b815f1649f = L.marker(
+                [19.7221, 77.1495],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_331476f596a2ae6a44c012d740cb3178 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ce9abf694c6a7c03cbb2b1b815f1649f.setIcon(icon_331476f596a2ae6a44c012d740cb3178);
+        
+    
+        var popup_3256fa8b441c4745caf63400eb2eb4ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_496af26e16dd95f3dcaf681390d1bbb2 = $(`<div id="html_496af26e16dd95f3dcaf681390d1bbb2" style="width: 100.0%; height: 100.0%;">Charging Station CS125</div>`)[0];
+                popup_3256fa8b441c4745caf63400eb2eb4ff.setContent(html_496af26e16dd95f3dcaf681390d1bbb2);
+            
+        
+
+        marker_ce9abf694c6a7c03cbb2b1b815f1649f.bindPopup(popup_3256fa8b441c4745caf63400eb2eb4ff)
+        ;
+
+        
+    
+    
+            var marker_631908f0db8f9dc0ddbb611f59f781d5 = L.marker(
+                [20.1011, 77.1374],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_ec54a8d72fb0ea940839b3db35835d5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_631908f0db8f9dc0ddbb611f59f781d5.setIcon(icon_ec54a8d72fb0ea940839b3db35835d5e);
+        
+    
+        var popup_024e4896393a81f9082f5dffc8bcbf26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83cb29055315619b8ca05375f5757ea7 = $(`<div id="html_83cb29055315619b8ca05375f5757ea7" style="width: 100.0%; height: 100.0%;">Charging Station CS126</div>`)[0];
+                popup_024e4896393a81f9082f5dffc8bcbf26.setContent(html_83cb29055315619b8ca05375f5757ea7);
+            
+        
+
+        marker_631908f0db8f9dc0ddbb611f59f781d5.bindPopup(popup_024e4896393a81f9082f5dffc8bcbf26)
+        ;
+
+        
+    
+    
+            var marker_c9c67180a2055f28c99d34adf1c482bf = L.marker(
+                [21.4608, 80.184],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_0c53efd7e35d5d3581ab40ce343565c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c9c67180a2055f28c99d34adf1c482bf.setIcon(icon_0c53efd7e35d5d3581ab40ce343565c1);
+        
+    
+        var popup_aaae6af6dcc317fd17d50ec4c6594a5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdc4f5c0e17efd5853e8d72420d6ae8e = $(`<div id="html_cdc4f5c0e17efd5853e8d72420d6ae8e" style="width: 100.0%; height: 100.0%;">Charging Station CS127</div>`)[0];
+                popup_aaae6af6dcc317fd17d50ec4c6594a5d.setContent(html_cdc4f5c0e17efd5853e8d72420d6ae8e);
+            
+        
+
+        marker_c9c67180a2055f28c99d34adf1c482bf.bindPopup(popup_aaae6af6dcc317fd17d50ec4c6594a5d)
+        ;
+
+        
+    
+    
+            var marker_8078fb1eb727df8c027edaeb0630b14c = L.marker(
+                [18.1866, 76.041],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_06b490c8c5b4d9681837ba734010aa48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8078fb1eb727df8c027edaeb0630b14c.setIcon(icon_06b490c8c5b4d9681837ba734010aa48);
+        
+    
+        var popup_ee89b9ed647afb72b46d4a2c2a38feb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1a7cb736646b66e3cbf0071289376ef = $(`<div id="html_a1a7cb736646b66e3cbf0071289376ef" style="width: 100.0%; height: 100.0%;">Charging Station CS128</div>`)[0];
+                popup_ee89b9ed647afb72b46d4a2c2a38feb5.setContent(html_a1a7cb736646b66e3cbf0071289376ef);
+            
+        
+
+        marker_8078fb1eb727df8c027edaeb0630b14c.bindPopup(popup_ee89b9ed647afb72b46d4a2c2a38feb5)
+        ;
+
+        
+    
+    
+            var marker_4c0c52ee2891b035dd144cc99eea1121 = L.marker(
+                [18.877, 73.414],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_1fafa7470370eb923b6bdc7e93acd5c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4c0c52ee2891b035dd144cc99eea1121.setIcon(icon_1fafa7470370eb923b6bdc7e93acd5c3);
+        
+    
+        var popup_9150544d418879068cf30b3fd3053449 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_367fde64de1ab76bfb126ab2d6885f5a = $(`<div id="html_367fde64de1ab76bfb126ab2d6885f5a" style="width: 100.0%; height: 100.0%;">Charging Station CS129</div>`)[0];
+                popup_9150544d418879068cf30b3fd3053449.setContent(html_367fde64de1ab76bfb126ab2d6885f5a);
+            
+        
+
+        marker_4c0c52ee2891b035dd144cc99eea1121.bindPopup(popup_9150544d418879068cf30b3fd3053449)
+        ;
+
+        
+    
+    
+            var marker_5e83332d7819c41496adbd349abf9c19 = L.marker(
+                [16.8494, 74.6037],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_f40f094c36032788e09b37f1bdd9b450 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5e83332d7819c41496adbd349abf9c19.setIcon(icon_f40f094c36032788e09b37f1bdd9b450);
+        
+    
+        var popup_69da6691e584cfb69cee5b42b559c2dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26c73a245e65e1398994789e271369fe = $(`<div id="html_26c73a245e65e1398994789e271369fe" style="width: 100.0%; height: 100.0%;">Charging Station CS130</div>`)[0];
+                popup_69da6691e584cfb69cee5b42b559c2dc.setContent(html_26c73a245e65e1398994789e271369fe);
+            
+        
+
+        marker_5e83332d7819c41496adbd349abf9c19.bindPopup(popup_69da6691e584cfb69cee5b42b559c2dc)
+        ;
+
+        
+    
+    
+            var marker_bffef5bc61d5fb712b01797745e2e4ec = L.marker(
+                [16.4296, 73.5341],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_5798e6c39ce0c8887c831988607cdd84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bffef5bc61d5fb712b01797745e2e4ec.setIcon(icon_5798e6c39ce0c8887c831988607cdd84);
+        
+    
+        var popup_6fcb1ab909722c9c2e767f38df02d72d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e5c59f7c8accef43a4bbfc9c561f3ff = $(`<div id="html_5e5c59f7c8accef43a4bbfc9c561f3ff" style="width: 100.0%; height: 100.0%;">Charging Station CS131</div>`)[0];
+                popup_6fcb1ab909722c9c2e767f38df02d72d.setContent(html_5e5c59f7c8accef43a4bbfc9c561f3ff);
+            
+        
+
+        marker_bffef5bc61d5fb712b01797745e2e4ec.bindPopup(popup_6fcb1ab909722c9c2e767f38df02d72d)
+        ;
+
+        
+    
+    
+            var marker_b62ecceb0a1089006afcdbcf604d6c93 = L.marker(
+                [19.6968, 72.7653],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_9bc5984e81e9a83621d4168f813081ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b62ecceb0a1089006afcdbcf604d6c93.setIcon(icon_9bc5984e81e9a83621d4168f813081ee);
+        
+    
+        var popup_baf608fcf077fce014ad6f41afd6c093 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0209cf11650190634065993001634db1 = $(`<div id="html_0209cf11650190634065993001634db1" style="width: 100.0%; height: 100.0%;">Charging Station CS132</div>`)[0];
+                popup_baf608fcf077fce014ad6f41afd6c093.setContent(html_0209cf11650190634065993001634db1);
+            
+        
+
+        marker_b62ecceb0a1089006afcdbcf604d6c93.bindPopup(popup_baf608fcf077fce014ad6f41afd6c093)
+        ;
+
+        
+    
+    
+            var marker_05925fb2e43235174dc31dd890ab59c2 = L.marker(
+                [18.1801, 76.0419],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_625812a924ca9600fb4661c396cb9765 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_05925fb2e43235174dc31dd890ab59c2.setIcon(icon_625812a924ca9600fb4661c396cb9765);
+        
+    
+        var popup_013b200aad803748d9421bdc35ca1627 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80a3f8c42f7d22985b8511cced88f6da = $(`<div id="html_80a3f8c42f7d22985b8511cced88f6da" style="width: 100.0%; height: 100.0%;">Charging Station CS133</div>`)[0];
+                popup_013b200aad803748d9421bdc35ca1627.setContent(html_80a3f8c42f7d22985b8511cced88f6da);
+            
+        
+
+        marker_05925fb2e43235174dc31dd890ab59c2.bindPopup(popup_013b200aad803748d9421bdc35ca1627)
+        ;
+
+        
+    
+    
+            var marker_7cfef9f51f4108eacf9dc4da27e25296 = L.marker(
+                [18.6943, 73.7485],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_486c655cd4d9a20f921e0155283c0a49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7cfef9f51f4108eacf9dc4da27e25296.setIcon(icon_486c655cd4d9a20f921e0155283c0a49);
+        
+    
+        var popup_126ab45aee49e49811cfc1733faf8e5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55ec8c36bce297528297ce581ba1f8e5 = $(`<div id="html_55ec8c36bce297528297ce581ba1f8e5" style="width: 100.0%; height: 100.0%;">Charging Station CS134</div>`)[0];
+                popup_126ab45aee49e49811cfc1733faf8e5b.setContent(html_55ec8c36bce297528297ce581ba1f8e5);
+            
+        
+
+        marker_7cfef9f51f4108eacf9dc4da27e25296.bindPopup(popup_126ab45aee49e49811cfc1733faf8e5b)
+        ;
+
+        
+    
+    
+            var marker_3c673fa1cae61889502835fbde8a7f13 = L.marker(
+                [20.3986, 78.1204],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_053c531c0ab6c80470351cdf94f2abc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3c673fa1cae61889502835fbde8a7f13.setIcon(icon_053c531c0ab6c80470351cdf94f2abc5);
+        
+    
+        var popup_9ed5b008b11726922f355bccdbe2c63f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4572beed7d687311b1ef0463a73e7988 = $(`<div id="html_4572beed7d687311b1ef0463a73e7988" style="width: 100.0%; height: 100.0%;">Charging Station CS135</div>`)[0];
+                popup_9ed5b008b11726922f355bccdbe2c63f.setContent(html_4572beed7d687311b1ef0463a73e7988);
+            
+        
+
+        marker_3c673fa1cae61889502835fbde8a7f13.bindPopup(popup_9ed5b008b11726922f355bccdbe2c63f)
+        ;
+
+        
+    
+    
+            var marker_16f37dae10db0c5fb9d9b0bbe873db60 = L.marker(
+                [21.2215, 78.0891],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_6551b0892e3c232bb8f1e70b9ad4898e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_16f37dae10db0c5fb9d9b0bbe873db60.setIcon(icon_6551b0892e3c232bb8f1e70b9ad4898e);
+        
+    
+        var popup_7076a833e87fc315c1a031aeece659d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd850d17e35b76ba4368c9b2ea1c70a2 = $(`<div id="html_bd850d17e35b76ba4368c9b2ea1c70a2" style="width: 100.0%; height: 100.0%;">Charging Station CS136</div>`)[0];
+                popup_7076a833e87fc315c1a031aeece659d4.setContent(html_bd850d17e35b76ba4368c9b2ea1c70a2);
+            
+        
+
+        marker_16f37dae10db0c5fb9d9b0bbe873db60.bindPopup(popup_7076a833e87fc315c1a031aeece659d4)
+        ;
+
+        
+    
+    
+            var marker_def8d4bb289522a3b2093334e21a4535 = L.marker(
+                [21.1697, 79.6526],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_2f458344a1e9a59e1252c90a07117f71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_def8d4bb289522a3b2093334e21a4535.setIcon(icon_2f458344a1e9a59e1252c90a07117f71);
+        
+    
+        var popup_7b50a28a051770fb599f7eca7fce5520 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30f9fde216ce944b5141fef6b208195b = $(`<div id="html_30f9fde216ce944b5141fef6b208195b" style="width: 100.0%; height: 100.0%;">Charging Station CS137</div>`)[0];
+                popup_7b50a28a051770fb599f7eca7fce5520.setContent(html_30f9fde216ce944b5141fef6b208195b);
+            
+        
+
+        marker_def8d4bb289522a3b2093334e21a4535.bindPopup(popup_7b50a28a051770fb599f7eca7fce5520)
+        ;
+
+        
+    
+    
+            var marker_754a949f825152caf5a9d42bbda81405 = L.marker(
+                [20.7371, 78.5946],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_d3a0a9eab7cba610d177b7ff213cbf0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_754a949f825152caf5a9d42bbda81405.setIcon(icon_d3a0a9eab7cba610d177b7ff213cbf0d);
+        
+    
+        var popup_abb9fb1da663cdc05094a9d75eafd022 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_896a217ab66f7f2c369f85d152ee8cee = $(`<div id="html_896a217ab66f7f2c369f85d152ee8cee" style="width: 100.0%; height: 100.0%;">Charging Station CS138</div>`)[0];
+                popup_abb9fb1da663cdc05094a9d75eafd022.setContent(html_896a217ab66f7f2c369f85d152ee8cee);
+            
+        
+
+        marker_754a949f825152caf5a9d42bbda81405.bindPopup(popup_abb9fb1da663cdc05094a9d75eafd022)
+        ;
+
+        
+    
+    
+            var marker_0a67260873437b619632ccdd8822bc40 = L.marker(
+                [21.455, 80.1911],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_2e3d1c28183b68dff2c8a87f1da81c84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0a67260873437b619632ccdd8822bc40.setIcon(icon_2e3d1c28183b68dff2c8a87f1da81c84);
+        
+    
+        var popup_260479ab097d40d1bfa9b2068b98e398 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4de2f49a5c553e3e191f62a6d1e3eac7 = $(`<div id="html_4de2f49a5c553e3e191f62a6d1e3eac7" style="width: 100.0%; height: 100.0%;">Charging Station CS139</div>`)[0];
+                popup_260479ab097d40d1bfa9b2068b98e398.setContent(html_4de2f49a5c553e3e191f62a6d1e3eac7);
+            
+        
+
+        marker_0a67260873437b619632ccdd8822bc40.bindPopup(popup_260479ab097d40d1bfa9b2068b98e398)
+        ;
+
+        
+    
+    
+            var marker_e994f510a914ab1abc6f05df5eb91385 = L.marker(
+                [19.9594, 79.2964],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_bcc4ceab7b84aae79acc0391805caaeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e994f510a914ab1abc6f05df5eb91385.setIcon(icon_bcc4ceab7b84aae79acc0391805caaeb);
+        
+    
+        var popup_3a280da1faa691e0d52585cf74e55275 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51487a1611ed568e0daf46c9208b8c32 = $(`<div id="html_51487a1611ed568e0daf46c9208b8c32" style="width: 100.0%; height: 100.0%;">Charging Station CS140</div>`)[0];
+                popup_3a280da1faa691e0d52585cf74e55275.setContent(html_51487a1611ed568e0daf46c9208b8c32);
+            
+        
+
+        marker_e994f510a914ab1abc6f05df5eb91385.bindPopup(popup_3a280da1faa691e0d52585cf74e55275)
+        ;
+
+        
+    
+    
+            var marker_4b06249cb773459c5299bb7d385627f5 = L.marker(
+                [20.9357, 77.7597],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_ceff3d9f97d7621e30d6d8c8f73b9bba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4b06249cb773459c5299bb7d385627f5.setIcon(icon_ceff3d9f97d7621e30d6d8c8f73b9bba);
+        
+    
+        var popup_ae7441a1050231c5315dc77621a701b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2202f67b3ab59e000bf9e6aca167349 = $(`<div id="html_c2202f67b3ab59e000bf9e6aca167349" style="width: 100.0%; height: 100.0%;">Charging Station CS141</div>`)[0];
+                popup_ae7441a1050231c5315dc77621a701b7.setContent(html_c2202f67b3ab59e000bf9e6aca167349);
+            
+        
+
+        marker_4b06249cb773459c5299bb7d385627f5.bindPopup(popup_ae7441a1050231c5315dc77621a701b7)
+        ;
+
+        
+    
+    
+            var marker_7c88ea8e1eb93f8277c20621ab9458de = L.marker(
+                [20.3904, 78.1334],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_7d66a23ce80cb99434cb4e100a9ee747 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7c88ea8e1eb93f8277c20621ab9458de.setIcon(icon_7d66a23ce80cb99434cb4e100a9ee747);
+        
+    
+        var popup_b9a6f738d0bc72d1ce6aba80bf74a5f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_085b565114061f2fc4c049268d8e2ad8 = $(`<div id="html_085b565114061f2fc4c049268d8e2ad8" style="width: 100.0%; height: 100.0%;">Charging Station CS142</div>`)[0];
+                popup_b9a6f738d0bc72d1ce6aba80bf74a5f2.setContent(html_085b565114061f2fc4c049268d8e2ad8);
+            
+        
+
+        marker_7c88ea8e1eb93f8277c20621ab9458de.bindPopup(popup_b9a6f738d0bc72d1ce6aba80bf74a5f2)
+        ;
+
+        
+    
+    
+            var marker_1284c1861a03d6fa1232ea348248b91d = L.marker(
+                [20.0059, 73.793],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_f477782a307f2748bc577d6ecf3a46db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1284c1861a03d6fa1232ea348248b91d.setIcon(icon_f477782a307f2748bc577d6ecf3a46db);
+        
+    
+        var popup_605d07b33ca8a3e1bfc4bce29ece121e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc785562cb6eb2a187041bf8b83a720b = $(`<div id="html_dc785562cb6eb2a187041bf8b83a720b" style="width: 100.0%; height: 100.0%;">Charging Station CS143</div>`)[0];
+                popup_605d07b33ca8a3e1bfc4bce29ece121e.setContent(html_dc785562cb6eb2a187041bf8b83a720b);
+            
+        
+
+        marker_1284c1861a03d6fa1232ea348248b91d.bindPopup(popup_605d07b33ca8a3e1bfc4bce29ece121e)
+        ;
+
+        
+    
+    
+            var marker_87d57cbdfcf224741c81912a93a183ed = L.marker(
+                [17.6599, 75.9064],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_7cf5e9cc4a678cd8a2d9d44e45933b6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_87d57cbdfcf224741c81912a93a183ed.setIcon(icon_7cf5e9cc4a678cd8a2d9d44e45933b6b);
+        
+    
+        var popup_8c407c01a7e4af6c463ffd45bb5487ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4393f65529c03b8bba624b5291c66fc6 = $(`<div id="html_4393f65529c03b8bba624b5291c66fc6" style="width: 100.0%; height: 100.0%;">Charging Station CS144</div>`)[0];
+                popup_8c407c01a7e4af6c463ffd45bb5487ec.setContent(html_4393f65529c03b8bba624b5291c66fc6);
+            
+        
+
+        marker_87d57cbdfcf224741c81912a93a183ed.bindPopup(popup_8c407c01a7e4af6c463ffd45bb5487ec)
+        ;
+
+        
+    
+    
+            var marker_a69f603f4fac8a1abea9b5c0f8d27f8d = L.marker(
+                [19.8355, 75.8855],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_66e1d9b14ce5cc4780de38f880d6de26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a69f603f4fac8a1abea9b5c0f8d27f8d.setIcon(icon_66e1d9b14ce5cc4780de38f880d6de26);
+        
+    
+        var popup_f3c5628e7e25e574d1921444551083d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16af9b8677624a74bb2fc1c22c676e23 = $(`<div id="html_16af9b8677624a74bb2fc1c22c676e23" style="width: 100.0%; height: 100.0%;">Charging Station CS145</div>`)[0];
+                popup_f3c5628e7e25e574d1921444551083d0.setContent(html_16af9b8677624a74bb2fc1c22c676e23);
+            
+        
+
+        marker_a69f603f4fac8a1abea9b5c0f8d27f8d.bindPopup(popup_f3c5628e7e25e574d1921444551083d0)
+        ;
+
+        
+    
+    
+            var marker_0bd9ac0d4a766c3657023528a7cfd636 = L.marker(
+                [18.8774, 73.4147],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_3648057f4a17d17630e1764a3ac062af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0bd9ac0d4a766c3657023528a7cfd636.setIcon(icon_3648057f4a17d17630e1764a3ac062af);
+        
+    
+        var popup_71add8a79a06c5423e5d9c1b4cb680ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_082d2fa9c5dcb9eb7901b78040b75f8d = $(`<div id="html_082d2fa9c5dcb9eb7901b78040b75f8d" style="width: 100.0%; height: 100.0%;">Charging Station CS146</div>`)[0];
+                popup_71add8a79a06c5423e5d9c1b4cb680ed.setContent(html_082d2fa9c5dcb9eb7901b78040b75f8d);
+            
+        
+
+        marker_0bd9ac0d4a766c3657023528a7cfd636.bindPopup(popup_71add8a79a06c5423e5d9c1b4cb680ed)
+        ;
+
+        
+    
+    
+            var marker_4eb2d6c4ba78194dd36f2ecddfbf4854 = L.marker(
+                [17.2774, 73.6051],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_4922e6420e5bd63f380c2eb0b05b39b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4eb2d6c4ba78194dd36f2ecddfbf4854.setIcon(icon_4922e6420e5bd63f380c2eb0b05b39b4);
+        
+    
+        var popup_e95b2c48fcff963ebff663468d3ec587 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52727aed0ee894778d63f8bf8fb6647d = $(`<div id="html_52727aed0ee894778d63f8bf8fb6647d" style="width: 100.0%; height: 100.0%;">Charging Station CS147</div>`)[0];
+                popup_e95b2c48fcff963ebff663468d3ec587.setContent(html_52727aed0ee894778d63f8bf8fb6647d);
+            
+        
+
+        marker_4eb2d6c4ba78194dd36f2ecddfbf4854.bindPopup(popup_e95b2c48fcff963ebff663468d3ec587)
+        ;
+
+        
+    
+    
+            var marker_fb6f589dc999d1ab40d500ae4937d1e7 = L.marker(
+                [20.0059, 73.793],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_13f2ba73b1dd001e041da8908801caf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fb6f589dc999d1ab40d500ae4937d1e7.setIcon(icon_13f2ba73b1dd001e041da8908801caf2);
+        
+    
+        var popup_8102248dc58a2d35caf94865a78a7ba8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78c1adae4fed449365559fbd85e87350 = $(`<div id="html_78c1adae4fed449365559fbd85e87350" style="width: 100.0%; height: 100.0%;">Charging Station CS148</div>`)[0];
+                popup_8102248dc58a2d35caf94865a78a7ba8.setContent(html_78c1adae4fed449365559fbd85e87350);
+            
+        
+
+        marker_fb6f589dc999d1ab40d500ae4937d1e7.bindPopup(popup_8102248dc58a2d35caf94865a78a7ba8)
+        ;
+
+        
+    
+    
+            var marker_22ef427da632f9675cf70cbec91a0625 = L.marker(
+                [20.9417, 77.7685],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_e8c33acfc83f07b8d9b3164594b1221c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_22ef427da632f9675cf70cbec91a0625.setIcon(icon_e8c33acfc83f07b8d9b3164594b1221c);
+        
+    
+        var popup_fcf66e0d916d8c6bda41e2e087dc9bf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb123eaf720c0793531ae84b1a525bac = $(`<div id="html_bb123eaf720c0793531ae84b1a525bac" style="width: 100.0%; height: 100.0%;">Charging Station CS149</div>`)[0];
+                popup_fcf66e0d916d8c6bda41e2e087dc9bf9.setContent(html_bb123eaf720c0793531ae84b1a525bac);
+            
+        
+
+        marker_22ef427da632f9675cf70cbec91a0625.bindPopup(popup_fcf66e0d916d8c6bda41e2e087dc9bf9)
+        ;
+
+        
+    
+    
+            var marker_2f951ecba48b515df480c74098ceb31a = L.marker(
+                [19.1383, 77.3208],
+                {}
+            ).addTo(map_b216330350e6c0e18efc556d1b59cecb);
+        
+    
+            var icon_a177a46766e316ae2040fc4d5c2994df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2f951ecba48b515df480c74098ceb31a.setIcon(icon_a177a46766e316ae2040fc4d5c2994df);
+        
+    
+        var popup_9e9a867712ee966f18271552c938c2fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c951e1abad4292383ef70333eec0f51 = $(`<div id="html_7c951e1abad4292383ef70333eec0f51" style="width: 100.0%; height: 100.0%;">Charging Station CS150</div>`)[0];
+                popup_9e9a867712ee966f18271552c938c2fb.setContent(html_7c951e1abad4292383ef70333eec0f51);
+            
+        
+
+        marker_2f951ecba48b515df480c74098ceb31a.bindPopup(popup_9e9a867712ee966f18271552c938c2fb)
+        ;
+
+        
+    
+</script>
+</html>
