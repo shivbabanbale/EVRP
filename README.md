@@ -23,37 +23,6 @@ Geographical Mapping: Google Maps API or OpenStreetMap
 Installation
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/evrp-project.git
-cd evrp-project
-Create and activate a virtual environment:
-
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install dependencies:
-
-bash
-Copy code
-pip install -r requirements.txt
-Run the application:
-
-bash
-Copy code
-python main.py
-Usage
-Input the number of electric vehicles and their respective energy capacities.
-Input customer locations, demand, and distance matrix.
-Input charging stations and their locations.
-Run the optimization algorithm to compute the most efficient routes.
-Visualize the resulting routes on a map using Folium.
-Example
-Input: List of customer locations, vehicle energy capacities, and charging station locations.
-Output: An optimized route for each EV, along with recharging stops when necessary.
-Sample Route Visualization:
-<p align="center"> <img src="path_to_image/evrp_route_example.png" alt="EVRP Route Visualization" width="600"/> </p>
 Future Enhancements
 Real-time Traffic Integration: Incorporate real-time traffic data for more accurate route planning.
 Time Window Constraints: Add support for delivery time windows.
